@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>practise</title>
+</head>
+<body>
+    <p>Head and tail game </p>
+    <button 
+    onclick="
+    const random=Math.random();
+    let comp='';
+    let result='';
+    if(random<0.5)
+    {
+      comp='head';
+    }
+    else{
+      comp='tails';
+    }
+    if(random==='head')
+    {
+      result='won'
+    }
+    else {
+      result='lose'
+    }
+    console.log(result);
+   alert(`you picked head computer pciked ${comp}. you ${result}`);
+    ">Head</button>
+    <button
+    onclick="
+    const random=Math.random();
+    let comp='';
+    let result='';
+    if(random<0.5)
+    {
+      comp='head';
+    }
+    else{
+      comp='tails';
+    }
+    if(random==='head')
+    {
+      result='lose'
+    }
+    else {
+      result='win'
+    }
+    console.log(result);
+   alert(`you picked tail computer pciked ${comp}. you ${result}`);
+    "
+    >Tail</button>
+    <script>
+      var hour=23;
+      var name='madhu';
+      if(hour>=6 && hour<12)
+    {
+      console.log(`Good Morning ${name}`);
+    }
+    else if(hour>=13 && hour<17)
+    {
+      console.log(`Good Afternoon ${name}`);
+    }
+    else {
+      console.log(`Good Night ${name}`)
+    }
+    var age=70;
+    const holiday=true;
+    if((age <=6 || age >=65) && holiday===true )
+    {
+      console.log('Discount');
+    }
+    else{
+      console.log('No Discount');
+    }
+    </script>
+</body>

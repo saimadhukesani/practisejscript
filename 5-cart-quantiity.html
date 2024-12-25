@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+  <title> Cart</title>
+</head>
+<body>
+  <p>Cart Quantity</p>
+  <button onclick="console.log(`Cart Quantity: ${cartquantity}`)">show Quantity</button>
+  <button 
+  onclick = 
+  "
+  if(cartquantity!==maxQunantiy){
+  cartquantity = cartquantity +1 ;console.log(`Cart Quantity: ${cartquantity}`)
+  }
+  else{
+    alert(`The cart is full `);
+  }"
+  > Add to cart</button>
+  <button onclick = 
+  "
+  if(cartquantity!==maxQunantiy){
+  cartquantity = cartquantity +2 ;console.log(`Cart Quantity: ${cartquantity}`)
+  }
+  else{
+    alert(`The cart is full `);
+  }"
+  >+2</button>
+  <button onclick = 
+  "if(cartquantity!==maxQunantiy){
+  cartquantity = cartquantity +3 ;console.log(`Cart Quantity: ${cartquantity}`)
+  }
+  else{
+    alert(`The cart is full `);
+  }
+  ">+3</button>
+  <button onclick = "
+  if(cartquantity!==maxQunantiy){
+  cartquantity += 4 ;console.log(`Cart Quantity: ${cartquantity}`)
+  }
+  else{
+    alert(`The cart is full `);
+  }
+  ">+4</button>
+  <button onclick = "
+  if(cartquantity!==maxQunantiy){
+  cartquantity += 5 ;console.log(`Cart Quantity: ${cartquantity}`)
+  }
+  else{
+    alert(`The cart is full `);
+  }
+  ">+5</button>
+  <button onclick = " 
+  if(cartquantity!==0)
+  {
+  cartquantity-- ;console.log(`Cart Quantity: ${cartquantity}`)
+  }
+  else{
+    alert(`'Not enough items in the cart' and don't update the quantity`);
+  }
+  ">Remove from cart</button>
+  <button onclick = "
+  if(cartquantity!==0)
+  {
+  cartquantity -=2 ;console.log(`Cart Quantity: ${cartquantity}`)
+  }
+  else{
+    alert(`'Not enough items in the cart' and don't update the quantity`);
+  }
+  ">-2</button>
+  <button onclick = "
+  if(cartquantity!==0)
+  {
+  cartquantity -= 3 ;console.log(`Cart Quantity: ${cartquantity}`)
+  }
+  else{
+    alert(`'Not enough items in the cart' and don't update the quantity`);
+  }
+  ">-3</button>
+  <button onclick = "cartquantity = 0 ;console.log(`Cart was reset`);console.log(`Cart Quantity: ${cartquantity}`)">Reset cart</button>
+  <script>
+    let cartquantity = 0;
+    var name='madhu';
+    console.log('my name is : ${name}');
+    var cost=0, coffe=5,bagels=3,soup=9;
+    cost=((1*coffe)+(2*bagels)+(1*soup));
+    console.log(`cost of food:$${cost}`);
+    var tax=0;
+    tax=cost*0.1;
+    console.log(`Tax(10%):$${tax}`);
+    var totalcost=tax+cost;
+    console.log(`Total cost:$${totalcost}`);
+    let maxQunantiy=10;
+  </script>
+</body>
